@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Jose Huacachi Bazán</title>
+  <meta name="description" content="Physics student at UTEC (Peru) working on multiscale Monte Carlo modeling of DNA damage repair from alpha-emitting radionuclides.">
+  <meta name="theme-color" content="#10141b">
+
+  <link rel="icon" href="favicon.ico">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="wordmark" href="index.html">JHB<span class="wordmark-dot">·</span>225</a>
+
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="siteNav">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="sr-only">Menu</span>
+      </button>
+
+      <nav class="site-nav" id="siteNav" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="about.html" aria-current="page">About</a>
+        <a href="research.html">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="projects.html">Projects</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="talks.html">Talks</a>
+        <a href="blog.html">Blog</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="cv.html">CV</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="page-hero">
+      <div class="page-hero-inner">
+        <img class="portrait" src="images/profile.jpg" alt="Portrait of Jose Huacachi Bazán">
+
+        <div>
+          <p class="eyebrow">About</p>
+          <h1>Hi, I'm Jose.</h1>
+          <p class="lede">I model how tissue heals itself after alpha radiation, so that a cancer therapy dose can be predicted before it's given.</p>
+        </div>
+
+        <dl class="fact-list">
+          <dt>Institution</dt>
+          <dd>UTEC, Peru</dd>
+          <dt>Based in</dt>
+          <dd>Lima, Peru</dd>
+          <dt>Focus</dt>
+          <dd>Computational &amp; medical physics</dd>
+          <dt>Currently</dt>
+          <dd>Writing my thesis's theoretical framework</dd>
+          <dt>Also</dt>
+          <dd>Teaching · AFINPA</dd>
+        </dl>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <h2>Background</h2>
+      <div class="prose">
+        <p>
+          I'm a physics student at UTEC, working on a graduate thesis titled
+          <em>“Modelado Computacional de la reparación del daño al ADN por radionúclidos emisores alfa
+          a baja tasa de dosis mediante un enfoque Monte Carlo Multiescala”</em> — computational modeling
+          of DNA damage repair from low-dose-rate alpha-emitting radionuclides, using a multiscale Monte
+          Carlo approach.
+        </p>
+        <p>
+          The core idea is to couple two very different scales of simulation. On one side, OpenTOPAS and
+          TOPAS-nBio handle the physics: tracking how alpha particles from radionuclides like Actinium-225
+          deposit energy as they pass through tissue. On the other, an agent-based cellular model built with
+          CompuCell3D's Cellular Potts Model handles the biology: how individual cells respond to that
+          damage over time. The TOPAS-Tissue framework is what lets the two talk to each other.
+        </p>
+        <p>
+          A lot of the current work centers on the Ac-225 decay chain itself — it doesn't decay in one
+          step, but through a sequence of daughter isotopes, each with its own energy and branching
+          fraction. Getting that right, via the Bateman equations and secular equilibrium, matters because
+          it determines exactly how much energy actually lands where. On the biology side, I'm using DNA
+          double-strand break and DSB-cluster classification to compare simulation output against what's
+          expected at a given radiation quality.
+        </p>
+        <p>
+          Alongside the thesis, I support the Biological Systems course, building bioinformatics practical
+          exercises for students, and I'm active with AFINPA, UTEC's nuclear and particle physics student
+          group.
+        </p>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <h2>Toolkit</h2>
+      <div class="toolkit-grid">
+        <div class="toolkit-group">
+          <h3>Simulation</h3>
+          <ul class="toolkit-list">
+            <li>OpenTOPAS &amp; TOPAS-nBio</li>
+            <li>Geant4</li>
+            <li>CompuCell3D (Cellular Potts Model)</li>
+          </ul>
+        </div>
+        <div class="toolkit-group">
+          <h3>Numerical analysis</h3>
+          <ul class="toolkit-list">
+            <li>Python</li>
+            <li>NumPy &amp; SciPy</li>
+            <li>SymPy</li>
+          </ul>
+        </div>
+        <div class="toolkit-group">
+          <h3>Writing &amp; publishing</h3>
+          <ul class="toolkit-list">
+            <li>LaTeX</li>
+            <li>biblatex / biber</li>
+            <li>TikZ</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>Jose Huacachi Bazán · Physics, UTEC · Lima, Peru</p>
+      <ul class="footer-links">
+        <li><a href="contact.html">Email</a></li>
+        <li><a href="#">GitHub</a></li>
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">Google Scholar</a></li>
+        <li><a href="#">ORCID</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/navbar.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
