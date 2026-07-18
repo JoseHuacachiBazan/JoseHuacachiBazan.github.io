@@ -1,263 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jose Gabriel Huacachi Bazan</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jose Huacachi Bazán — Computational &amp; Medical Physics</title>
+  <meta name="description" content="Jose Huacachi Bazán, physics student at UTEC (Peru), building multiscale Monte Carlo models of DNA damage repair from alpha-emitting radionuclides.">
+  <meta name="theme-color" content="#10141b">
 
-    <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family:Arial, Helvetica, sans-serif;
-        }
+  <link rel="icon" href="favicon.ico">
 
-        body{
-            background:#f5f5f5;
-            color:#222;
-        }
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-        header{
-            background:#0B3D91;
-            color:white;
-            padding:60px;
-            text-align:center;
-        }
-
-        header h1{
-            font-size:3em;
-            margin-bottom:10px;
-        }
-
-        header p{
-            font-size:1.2em;
-        }
-
-        nav{
-            background:#222;
-            text-align:center;
-            padding:15px;
-        }
-
-        nav a{
-            color:white;
-            text-decoration:none;
-            margin:20px;
-            font-size:18px;
-        }
-
-        nav a:hover{
-            color:#00c3ff;
-        }
-
-        section{
-            width:80%;
-            margin:auto;
-            padding:60px 0;
-        }
-
-        h2{
-            color:#0B3D91;
-            margin-bottom:20px;
-        }
-
-        .card{
-            background:white;
-            padding:25px;
-            margin-top:20px;
-            border-radius:12px;
-            box-shadow:0px 4px 10px rgba(0,0,0,.1);
-        }
-
-        footer{
-            text-align:center;
-            background:#0B3D91;
-            color:white;
-            padding:25px;
-            margin-top:50px;
-        }
-
-        ul{
-            padding-left:20px;
-        }
-
-        li{
-            margin-bottom:10px;
-        }
-
-        .button{
-            display:inline-block;
-            background:#0B3D91;
-            color:white;
-            padding:12px 22px;
-            border-radius:8px;
-            text-decoration:none;
-            margin-top:20px;
-        }
-
-        .button:hover{
-            background:#1565C0;
-        }
-
-    </style>
-
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
-
 <body>
 
-<header>
-
-<h1>Jose Gabriel Huacachi Bazan</h1>
-
-<p>
-Medical Physics • Monte Carlo Simulations • Radiation Biology
-</p>
-
-</header>
-
-<nav>
-
-<a href="#about">About</a>
-<a href="#research">Research</a>
-<a href="#publications">Publications</a>
-<a href="#projects">Projects</a>
-<a href="#contact">Contact</a>
-
-</nav>
-
-<section id="about">
-
-<h2>About Me</h2>
-
-<div class="card">
-
-<p>
-
-Welcome!
-
-I am a researcher in Medical Physics interested in
-
-<ul>
-<li>Monte Carlo simulations</li>
-<li>TOPAS and Geant4-DNA</li>
-<li>Targeted Alpha Therapy</li>
-<li>Radiobiology</li>
-<li>Computational Biology</li>
-<li>Systems Biology</li>
-</ul>
-
-</p>
-
-</div>
-
-</section>
-
-<section id="research">
-
-<h2>Research Interests</h2>
-
-<div class="card">
-
-<ul>
-
-<li>Targeted Alpha Therapy</li>
-
-<li>DNA Damage Modeling</li>
-
-<li>Radiation Transport</li>
-
-<li>TOPAS-nBio</li>
-
-<li>Geant4</li>
-
-<li>Multiscale Modeling</li>
-
-<li>Artificial Intelligence in Medical Physics</li>
-
-</ul>
-
-</div>
-
-</section>
-
-<section id="projects">
-
-<h2>Projects</h2>
-
-<div class="card">
-
-<h3>TOPAS-Tissue</h3>
-
-<p>
-
-Simulation of radionuclide transport and radiation effects in multicellular systems.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>DNA Damage Modeling</h3>
-
-<p>
-
-Multiscale Monte Carlo framework for DNA damage induced by alpha emitters.
-
-</p>
-
-</div>
-
-</section>
-
-<section id="publications">
-
-<h2>Publications</h2>
-
-<div class="card">
-
-<p>
-
-Coming Soon...
-
-</p>
-
-</div>
-
-</section>
-
-<section id="contact">
-
-<h2>Contact</h2>
-
-<div class="card">
-
-<p>Email:</p>
-
-<p>
-your_email@domain.com
-</p>
-
-<br>
-
-<a class="button" href="https://github.com/" target="_blank">
-GitHub
-</a>
-
-</div>
-
-</section>
-
-<footer>
-
-<p>
-
-© 2026 Jose Gabriel Huacachi Bazan
-
-</p>
-
-</footer>
-
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="wordmark" href="index.html">JHB<span class="wordmark-dot">·</span>225</a>
+
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="siteNav">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="sr-only">Menu</span>
+      </button>
+
+      <nav class="site-nav" id="siteNav" aria-label="Main">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="about.html">About</a>
+        <a href="research.html">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="projects.html">Projects</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="talks.html">Talks</a>
+        <a href="blog.html">Blog</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="cv.html">CV</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">Computational &amp; Medical Physics</p>
+          <h1>Jose Huacachi Bazán</h1>
+          <p class="hero-lede">Modeling how tissue repairs radiation damage — one alpha particle at a time.</p>
+          <p class="hero-body">
+            I'm a physics student at UTEC (Peru) building multiscale Monte Carlo models that couple
+            radiation transport with agent-based cellular simulation, to understand how DNA damage from
+            low-dose-rate alpha-emitting radionuclides like Actinium-225 gets repaired.
+          </p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="research.html">View research</a>
+            <a class="btn btn-ghost" href="pdf/CV.pdf">Download CV</a>
+          </div>
+        </div>
+
+        <div class="hero-chain">
+          <svg viewBox="0 0 640 210" role="img" aria-label="Diagram of the Actinium-225 decay chain: Ac-225 to Fr-221 to At-217 to Bi-213, branching by beta or alpha decay to Po-213 or Tl-209, converging at Pb-209, ending at stable Bi-209.">
+            <defs>
+              <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                <path d="M0,0 L10,5 L0,10 z" fill="var(--accent-gold, #d9a441)"></path>
+              </marker>
+              <marker id="arrow-branch" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                <path d="M0,0 L10,5 L0,10 z" fill="var(--accent-teal, #4fa8a0)"></path>
+              </marker>
+            </defs>
+
+            <!-- main chain backbone -->
+            <line x1="30" y1="100" x2="120" y2="100" class="chain-link" marker-end="url(#arrow)"></line>
+            <line x1="120" y1="100" x2="210" y2="100" class="chain-link" marker-end="url(#arrow)"></line>
+            <line x1="210" y1="100" x2="300" y2="100" class="chain-link" marker-end="url(#arrow)"></line>
+            <line x1="300" y1="100" x2="420" y2="100" class="chain-link" marker-end="url(#arrow)"></line>
+            <line x1="420" y1="100" x2="530" y2="100" class="chain-link" marker-end="url(#arrow)"></line>
+            <line x1="530" y1="100" x2="610" y2="100" class="chain-link" marker-end="url(#arrow)"></line>
+
+            <!-- minor branch: Bi-213 -> Tl-209 -> Pb-209 -->
+            <line x1="300" y1="100" x2="420" y2="170" class="chain-link chain-link--branch" marker-end="url(#arrow-branch)"></line>
+            <line x1="420" y1="170" x2="530" y2="100" class="chain-link chain-link--branch" marker-end="url(#arrow-branch)"></line>
+
+            <!-- decay-type labels -->
+            <text x="75" y="88" class="chain-decay">α</text>
+            <text x="165" y="88" class="chain-decay">α</text>
+            <text x="255" y="88" class="chain-decay">α</text>
+            <text x="360" y="88" class="chain-decay">β⁻ 97.9%</text>
+            <text x="475" y="88" class="chain-decay">α</text>
+            <text x="570" y="88" class="chain-decay">β⁻</text>
+            <text x="335" y="150" class="chain-decay chain-decay--branch">α 2.1%</text>
+            <text x="500" y="150" class="chain-decay chain-decay--branch">β⁻</text>
+
+            <!-- nodes -->
+            <circle cx="30" cy="100" r="6" class="chain-node"></circle>
+            <circle cx="120" cy="100" r="6" class="chain-node"></circle>
+            <circle cx="210" cy="100" r="6" class="chain-node"></circle>
+            <circle cx="300" cy="100" r="6" class="chain-node"></circle>
+            <circle cx="420" cy="100" r="6" class="chain-node"></circle>
+            <circle cx="420" cy="170" r="6" class="chain-node chain-node--branch"></circle>
+            <circle cx="530" cy="100" r="6" class="chain-node"></circle>
+            <circle cx="610" cy="100" r="9" class="chain-node chain-node--stable"></circle>
+            <circle cx="610" cy="100" r="5" class="chain-node chain-node--stable-inner"></circle>
+
+            <!-- isotope labels -->
+            <text x="30" y="70" class="chain-label">²²⁵Ac</text>
+            <text x="120" y="70" class="chain-label">²²¹Fr</text>
+            <text x="210" y="70" class="chain-label">²¹⁷At</text>
+            <text x="300" y="70" class="chain-label">²¹³Bi</text>
+            <text x="420" y="70" class="chain-label">²¹³Po</text>
+            <text x="420" y="192" class="chain-label chain-label--branch">²⁰⁹Tl</text>
+            <text x="530" y="70" class="chain-label">²⁰⁹Pb</text>
+            <text x="610" y="70" class="chain-label">²⁰⁹Bi</text>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="now">
+      <div class="now-inner">
+        <p class="eyebrow">Now</p>
+        <p class="now-text">
+          Writing the theoretical framework chapter of my thesis — currently deep in the Ac-225 decay
+          chain: Bateman equations, secular equilibrium, and branching fractions, cross-checked
+          numerically in Python.
+        </p>
+      </div>
+    </section>
+
+    <section class="focus">
+      <h2>Focus areas</h2>
+      <div class="focus-grid">
+        <article class="focus-card">
+          <p class="focus-tag">01 — Transport</p>
+          <h3>Radiation Transport</h3>
+          <p>Monte Carlo simulation of alpha-particle transport and energy deposition with OpenTOPAS and TOPAS-nBio.</p>
+        </article>
+        <article class="focus-card">
+          <p class="focus-tag">02 — Tissue</p>
+          <h3>Multiscale Cellular Modeling</h3>
+          <p>Agent-based tissue simulation with CompuCell3D's Cellular Potts Model, coupled through the TOPAS-Tissue framework.</p>
+        </article>
+        <article class="focus-card">
+          <p class="focus-tag">03 — Repair</p>
+          <h3>DNA Damage &amp; Repair</h3>
+          <p>Characterizing double-strand breaks and DSB clusters to model repair kinetics at low dose rates.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="involvement">
+      <h2>Elsewhere in the department</h2>
+      <div class="involvement-grid">
+        <article>
+          <h3>Teaching</h3>
+          <p>Supporting the Biological Systems course, designing bioinformatics practical exercises for students.</p>
+        </article>
+        <article>
+          <h3>AFINPA</h3>
+          <p>Active with UNI's nuclear and particle physics student group — organizing and evaluating new members.</p>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>Jose Huacachi Bazán · Physics, UTEC · Lima, Peru</p>
+      <ul class="footer-links">
+        <li><a href="contact.html">Email</a></li>
+        <li><a href="#">GitHub</a></li>
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">Google Scholar</a></li>
+        <li><a href="#">ORCID</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/navbar.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
