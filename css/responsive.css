@@ -1,0 +1,89 @@
+/* ==========================================================================
+   Mobile navigation
+   Below 860px the horizontal nav becomes a dropdown panel triggered by
+   .nav-toggle. State is driven by aria-expanded (set in js/navbar.js) so
+   the accessible state and the visual state can't drift apart.
+   ========================================================================== */
+
+@media (max-width: 860px) {
+  .header-inner {
+    position: relative;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  .site-nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+    background: var(--panel);
+    border-bottom: 1px solid var(--line);
+    padding: var(--space-2) var(--space-4) var(--space-3);
+    transform: translateY(-8px);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform var(--transition), opacity var(--transition);
+  }
+
+  .site-nav.is-open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .site-nav a {
+    padding: var(--space-2) 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .site-nav a:last-child {
+    border-bottom: none;
+  }
+
+  .hamburger-line {
+    transition: transform var(--transition), opacity var(--transition);
+  }
+
+  .nav-toggle[aria-expanded="true"] .hamburger-line:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+
+  .nav-toggle[aria-expanded="true"] .hamburger-line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .nav-toggle[aria-expanded="true"] .hamburger-line:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+}
+
+@media (max-width: 860px) and (prefers-reduced-motion: reduce) {
+  .site-nav,
+  .hamburger-line {
+    transition: none;
+  }
+}
+
+/* ==========================================================================
+   Small-screen polish
+   ========================================================================== */
+
+@media (max-width: 480px) {
+  .header-inner {
+    padding: var(--space-2) var(--space-3);
+  }
+
+  .wordmark {
+    font-size: var(--text-base);
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
