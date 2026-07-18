@@ -330,3 +330,168 @@ button {
 .footer-links a:hover {
   color: var(--accent-gold);
 }
+
+/* ==========================================================================
+   Page hero
+   Reusable top-of-page intro for interior pages (about, teaching, talks…):
+   portrait + eyebrow/title/lede on one side, a quick-facts list on the other.
+   ========================================================================== */
+
+.page-hero {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: clamp(3rem, 8vw, var(--space-7)) var(--space-4) var(--space-6);
+}
+
+.page-hero-inner {
+  display: grid;
+  grid-template-columns: 200px 1fr auto;
+  gap: var(--space-5);
+  align-items: start;
+}
+
+.portrait {
+  width: 200px;
+  height: 200px;
+  border-radius: var(--radius);
+  background: var(--panel);
+  border: 1px solid var(--line);
+  outline: 1px solid var(--accent-gold);
+  outline-offset: 6px;
+  object-fit: cover;
+}
+
+.page-hero h1 {
+  font-size: clamp(2rem, 3.5vw + 1rem, 3rem);
+  line-height: 1.1;
+  margin-bottom: var(--space-2);
+}
+
+.page-hero .lede {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: var(--text-lg);
+  color: var(--paper);
+  opacity: 0.92;
+  line-height: 1.4;
+  max-width: 52ch;
+}
+
+.fact-list {
+  display: grid;
+  gap: var(--space-2);
+  font-size: var(--text-sm);
+  min-width: 200px;
+}
+
+.fact-list dt {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-teal);
+}
+
+.fact-list dd {
+  margin: 0.15em 0 0;
+  color: var(--paper);
+}
+
+@media (max-width: 860px) {
+  .page-hero-inner {
+    grid-template-columns: 96px 1fr;
+  }
+
+  .portrait {
+    width: 96px;
+    height: 96px;
+    outline-offset: 4px;
+  }
+
+  .fact-list {
+    grid-column: 1 / -1;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ==========================================================================
+   Content sections / prose
+   Generic vertical section used for long-form page content (bio, teaching
+   notes, project write-ups…).
+   ========================================================================== */
+
+.content-section {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-4) var(--space-6);
+}
+
+.content-section h2 {
+  font-size: var(--text-2xl);
+  margin-bottom: var(--space-3);
+}
+
+.prose {
+  max-width: 68ch;
+  display: grid;
+  gap: var(--space-2);
+}
+
+.prose p {
+  color: var(--paper-dim);
+  font-size: var(--text-md);
+  line-height: 1.7;
+}
+
+.prose em {
+  color: var(--paper);
+  font-style: italic;
+}
+
+/* ==========================================================================
+   Toolkit list
+   Mono, terminal-flavoured inventory for software / methods — reusable
+   anywhere a set of tools or techniques needs listing.
+   ========================================================================== */
+
+.toolkit-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-4);
+}
+
+.toolkit-group h3 {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-gold);
+  margin-bottom: var(--space-2);
+}
+
+.toolkit-list {
+  display: grid;
+  gap: 0.5em;
+}
+
+.toolkit-list li {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  color: var(--paper-dim);
+  padding-left: 1.3em;
+  position: relative;
+}
+
+.toolkit-list li::before {
+  content: '\203A';
+  position: absolute;
+  left: 0;
+  color: var(--accent-teal);
+}
+
+@media (max-width: 860px) {
+  .toolkit-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-3);
+  }
+}
